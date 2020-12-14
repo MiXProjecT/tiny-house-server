@@ -1,5 +1,16 @@
-/build
+# dependecies
 /node_modules
+
+# production
+/build
+
+# enviroment variables
+.env
+
+# logs
+npm-debug.log*
+yarn-error.log*
+yarn-debug.log*
 
 # IDE
 /.idea/.gitignore
