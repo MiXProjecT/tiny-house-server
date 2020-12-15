@@ -1,8 +1,9 @@
 import { ObjectId } from "mongodb";
 import { IResolvers } from "apollo-server-express"
-import { Database, Listing } from "../lib/types";
+import { Database, Listing } from "lib/types";
 
-export const resolvers: IResolvers = {
+
+export const listingResolvers: IResolvers = {
   Query: {
     listings: async (_root: undefined, _args: Record<string, never>, {db}: { db: Database }): Promise<Listing[]> => {
       return await db.listings.find({}).toArray();
