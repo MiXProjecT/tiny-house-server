@@ -3,9 +3,17 @@
     "module": "commonjs",
     "target": "es2020",
     "sourceMap": true,
+    "baseUrl": "src",
+    "paths": {
+      "*": ["*"]
+    },
     "rootDir": "./src",
     "outDir": "./build",
     "esModuleInterop": true,
     "strict": true,
+    "skipLibCheck": true,
   },
+  "include": [
+    "src",
+  ]
 }
