@@ -9,7 +9,15 @@ export interface Booking {
 }
 
 export interface User {
-  _id: ObjectId;
+  _id: string;
+  token: string;
+  name: string;
+  avatar: string;
+  contact: string;
+  walletId?: string;
+  income: number;
+  bookings: ObjectId[];
+  listings: ObjectId[];
 }
 
 export interface Database {
