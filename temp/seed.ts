@@ -793,8 +793,9 @@ const seed = async () => {
     }
 
     console.log("[seed] : success");
+    process.exit(0);
   } catch {
-    throw new Error("failed to seed database");
+    throw new Error("Failed to seed database");
   }
 }
 
