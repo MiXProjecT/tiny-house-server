@@ -1,5 +1,5 @@
 import { MongoClient } from "mongodb";
-import { Database } from "../lib/types";
+import { Database, Listing, User } from "../lib/types";
 
 const {
   DB_USER = '',
@@ -19,6 +19,8 @@ export const connectDatabase = async (): Promise<Database> => {
   const db = client.db('main')
 
   return {
-    listings: db.collection('test_listings')
+    bookings: db.collection("bookings"),
+    listings: db.collection<Listing>('listings'),
+    users: db.collection<User>('users')
   }
 }
