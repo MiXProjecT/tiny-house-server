@@ -2,7 +2,6 @@ import {google, people_v1} from "googleapis";
 
 type PeopleData = {
   user: people_v1.Schema$Person
-
 }
 
 const auth = new google.auth.OAuth2(
