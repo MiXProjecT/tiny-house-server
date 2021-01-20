@@ -28,7 +28,7 @@ const typeDefs = gql`
     address: String!
     city: String!
     bookings(limit: Int!, page: Int!): Bookings
-    bookigsIndex: String!
+    bookingsIndex: String!
     price: Int!
     NumOfGuests: Int!
   }
