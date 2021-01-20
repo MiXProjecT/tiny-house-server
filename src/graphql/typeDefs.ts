@@ -14,7 +14,7 @@ const typeDefs = gql`
   }
   
   enum ListingType {
-    APARTAMENT
+    APARTMENT
     HOUSE
   }
   
