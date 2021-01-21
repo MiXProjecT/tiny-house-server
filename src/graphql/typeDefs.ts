@@ -30,7 +30,7 @@ const typeDefs = gql`
     bookings(limit: Int!, page: Int!): Bookings
     bookingsIndex: String!
     price: Int!
-    NumOfGuests: Int!
+    numOfGuests: Int!
   }
   
   type Listings {
